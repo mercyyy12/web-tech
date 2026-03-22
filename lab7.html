@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 7</title>
+
+    <script>
+        function pageLoaded() {
+            alert("Welcome! Page is loaded.");
+        }
+
+        function showClick() {
+            alert("Button Clicked!");
+        }
+
+        function keyPressed() {
+            alert("Key Pressed!");
+        }
+
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            if (name == "") {
+                alert("Please enter your name");
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body onload="pageLoaded()">
+
+    <h1>HTML Events Example</h1>
+
+    <h2>Mouse Event</h2>
+    <button onclick="showClick()">Click Me</button>
+
+    <h2>Keyboard Event</h2>
+    <input type="text" onkeydown="keyPressed()">
+
+    <h2>Form Event</h2>
+    <form onsubmit="return validateForm()">
+        Name: <input type="text" id="name">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

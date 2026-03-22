@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 6</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Multimedia Web Page</h1>
+    </header>
+
+    <section>
+
+        <h2>Audio Example</h2>
+        <audio controls>
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+
+        <h2>Video Example</h2>
+        <video height="300" width="400" controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <h2>Canvas Example</h2>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "red";
+            ctx.fillRect(20, 20, 150, 50);
+        </script>
+
+    </section>
+
+    <footer>
+        <p>End of the page</p>
+    </footer>
+
+</body>
+
+</html>
